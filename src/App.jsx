@@ -10,15 +10,15 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
 
-  const [textColor, setTextColor] = useState('black'); // מצב התחלתי לצבע טקסט
+  const [textColor, setTextColor] = useState('#ff00e6'); // מצב התחלתי לצבע טקסט
   const [textSize, setTextSize] = useState('16px');   // מצב התחלתי לגודל טקסט
   return (
-    <div>
-      <Navigation textColor={textColor} textSize={textSize}/>
+    <div id='app'>
+      <Navigation/>
       <Routes>
         <Route path="/homePage" element={<HomePage textColor={textColor} textSize={textSize}/>}/>
-        <Route path="/style" element={<Style setTextColor={setTextColor} setTextSize={setTextSize}/>}>
-          <Route path="textcolor" element={<TextColor setTextColor={setTextColor}/>}/>
+        <Route path="/style" element={<Style/>}>
+          <Route path="textcolor" element={<TextColor setTextColor={setTextColor} color={textColor}/>}/>
           <Route path="textSize" element={<TextSize setTextSize={setTextSize}/>}/>
         </Route>
         <Route path="*" element={<div>404 - Page Not Found</div>} />

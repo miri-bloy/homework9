@@ -1,0 +1,91 @@
+body {
+    direction: rtl;
+    text-align: center;
+}
+
+#app {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-image: linear-gradient(90deg, #2563eb 0%, #7e22ce 74%);
+    border-radius: 10px 10px 0 0;
+}
+
+#container {
+    background-image: linear-gradient(90deg, #2563eb 0%, #7e22ce 74%);
+    padding: 5px;
+    height: 70vh;
+    border-radius: 0 0 10px 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.1s ease-in-out;
+}
+
+.link:hover {
+    color: black;
+}
+
+.link i{
+    margin-right: 20px;
+}
+
+#homePage,
+#style {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#homePage h1{
+    margin-bottom: 50px;
+}
+
+.link-style {
+    text-decoration: none;
+    color: rgb(255, 0, 230);
+    transition: color 0.3s ease-in-out;
+    padding: 20px;
+    display: block;
+    font-size: medium;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    padding: 0;
+    margin: 50px;
+    overflow: hidden;
+    border:solid 2px #ff00e6;
+    border-radius: 8px;
+    box-shadow: 0 5.4px 10.2px rgba(134, 134, 134, 0.25), 0 3.2px 5.2px rgba(0, 0, 0, 0.314);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+input{
+    border-radius: 8px;
+    width: 200px;
+}
